@@ -7,12 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form method="post" action="Defaut">
-Email:<input type="email" required name="mail"><br>
-Mot de passe: <input type="password" name="mdp"><br>
-<input type="submit" value="envoyer">
-
-</form>
+<h1>Bienvenu admin</h1>
 
 </body>
 </html>

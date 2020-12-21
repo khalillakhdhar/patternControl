@@ -35,7 +35,15 @@ public class Defaut extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		//doGet(request, response);
+		String email=request.getParameter("mail");
+		
+		response.getWriter().append("<h1>"+email+"</h1>");
+		if(email.contains("admin"))
+		{
+			
+			response.sendRedirect("profile.jsp");
+		}
 	}
 
 }
