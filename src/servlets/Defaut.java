@@ -50,5 +50,5 @@ public class Defaut extends HttpServlet {
 			response.sendRedirect("profile.jsp");
 		}
 	}
-
+	
 }
