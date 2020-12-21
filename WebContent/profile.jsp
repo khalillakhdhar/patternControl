@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1>Bienvenu admin</h1>
-
+<%= session.getAttribute("email") %>
+<% // out.print(session.getAttribute("email")); %>
 </body>
 </html>

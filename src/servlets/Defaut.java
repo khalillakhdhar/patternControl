@@ -6,6 +6,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.catalina.connector.Response;
 
 /**
  * Servlet implementation class Defaut
@@ -41,6 +44,8 @@ public class Defaut extends HttpServlet {
 		response.getWriter().append("<h1>"+email+"</h1>");
 		if(email.contains("admin"))
 		{
+			HttpSession session = request.getSession();
+			session.setAttribute("email", email);
 			
 			response.sendRedirect("profile.jsp");
 		}
