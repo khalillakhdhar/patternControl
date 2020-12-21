@@ -5,14 +5,14 @@
 <title>page de pattern controle</title>
 </head>
 <body>
-<form>
+<form method="post">
 <table>
 <tr><td><h1>Inscription</h1></td></tr>
-<tr><td>Nom</td><td><input type="text" pattern="[A-Za-z '-]{2,}" title="le nom ne doit pas contenir des caract�res incorrecte!" required name="nom"></td></tr>
-<tr><td>Prenom</td><td><input type="text" required name="prenom"></td></tr>
+<tr><td>Nom</td><td><input type="text" pattern="[A-Za-z '-]{2,}" title="le nom ne doit pas contenir des caractéres incorrecte!" required name="nom"></td></tr>
+<tr><td>Prenom</td><td><input type="text" required pattern="[A-Za-z '-]{2,30}" title="le nom ne doit pas contenir des caractéres incorrecte!" name="prenom"></td></tr>
 <tr><td>Age</td><td><input type="number" min="18" name="age"></td></tr>
 <tr><td>Email</td><td><input type="email" required name="email"></td></tr>
-<tr><td>Mot de passe</td><td><input required type="password" name="mdp"></td></tr>
+<tr><td>Mot de passe</td><td><input required type="password" pattern="[A-Za-z0-9 _]{​​8,}​​" name="mdp"></td></tr>
 <tr><td>LinkedIn</td><td><input type="url" name="linkedin"></td></tr>
 <tr><td><input type="reset" value="vider"></td><td><input type="submit" value="envoyer"></td></tr>
 </table>
